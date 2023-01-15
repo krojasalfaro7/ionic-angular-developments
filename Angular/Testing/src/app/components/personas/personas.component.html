@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h1>Personas:</h1>
+      <button class="btn btn-primary" [disabled]="!agregarPersona" (click)="onCrearpersona()">Agregar persona</button>
+      <app-persona></app-persona>
+      <p>{{agregarPersonaStatus}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <app-casa valor="4000" direccion="Caracas"></app-casa>
+      <app-casa valor="3000" direccion="La Guaira"></app-casa>
+    </div>
+  </div>
+</div>
